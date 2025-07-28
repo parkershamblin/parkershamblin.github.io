@@ -1,0 +1,39 @@
+---
+title: "Computer Vision Old School RuneScape Project"
+publishedAt: "2022-08-15"
+summary: "This program automates cow farming in Old School RuneScape by leveraging OpenCV and a custom-trained cascade classifier model, which I trained on images of RuneScape gameplay. PyAutoGUI is used to interact with the game through mouse actions, while the image processing runs in real time."
+images:
+  - "/images/projects/project-01/opencv-OSRS-demo.gif"
+team:
+  - name: "Parker Shamblin"
+    role: "Software Engineer"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/parkershamblin/"
+link: "https://github.com/parkershamblin/opencv-OSRS1"
+---
+
+## Overview
+
+Development of an intelligent game automation system using computer vision and machine learning to perform real-time object detection and automated interactions in Old School RuneScape.
+
+## Key Features
+
+- **Custom Cascade Classifier**: Trained a machine learning model using OpenCV's cascade training tools on 200+ positive cow images and 1000+ negative samples, achieving accurate object detection in game environments.
+- **Real-Time Image Processing**: Implemented multi-threaded architecture to capture game screenshots, process them through the trained model, and perform automated mouse interactions simultaneously without blocking the main detection loop.
+- **Automated Game Interaction**: Integrated PyAutoGUI for precise mouse movement and clicking, with intelligent target selection that calculates click points at the center of detected objects for optimal interaction accuracy.
+- **Performance Monitoring**: Built-in FPS tracking and loop timing to monitor real-time performance, ensuring the system maintains responsive detection rates during gameplay.
+
+## Technologies Used
+
+- **OpenCV**: For computer vision, image processing, and cascade classifier training and deployment.
+- **Python**: Core programming language with threading support for concurrent operations.
+- **PyAutoGUI**: For automated mouse control and game interaction.
+- **NumPy**: For efficient array operations and image data manipulation.
+
+## Challenges and Learnings
+
+One key challenge was achieving reliable object detection in a dynamic game environment with varying lighting and background conditions. The solution involved collecting a diverse training dataset and fine-tuning cascade classifier parameters like hit rates and false alarm thresholds. Additionally, implementing proper threading to separate image processing from game interactions was crucial for maintaining real-time performance without detection lag.
+
+## Outcome
+
+The automation system successfully performs real-time cow detection and farming with consistent accuracy. The project demonstrates practical application of computer vision in gaming environments and showcases skills in machine learning model training, multi-threaded programming, and real-time image processing. The modular architecture allows for easy adaptation to detect other game objects by retraining the classifier model.
