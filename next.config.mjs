@@ -1,5 +1,7 @@
 import mdx from "@next/mdx";
 
+const isWorkerBuild = process.env.NEXT_DEPLOY_TARGET === "worker";
+
 const withMDX = mdx({
   extension: /\.mdx?$/,
   options: {},
@@ -9,15 +11,16 @@ const withMDX = mdx({
 const nextConfig = {
   pageExtensions: ["ts", "tsx", "md", "mdx"],
   transpilePackages: ["next-mdx-remote"],
+  output: isWorkerBuild ? "standalone" : "export",
+  outputFileTracingRoot: process.cwd(),
   sassOptions: {
     compiler: "modern",
     silenceDeprecations: ["legacy-js-api"],
   },
-  output: 'export',
   trailingSlash: false,
   images: {
-    unoptimized: true
-  }
+    unoptimized: true,
+  },
 };
 
 export default withMDX(nextConfig);

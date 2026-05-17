@@ -186,7 +186,20 @@ type CustomMDXProps = MDXRemoteProps & {
 };
 
 export function CustomMDX(props: CustomMDXProps) {
+  const options = {
+    ...props.options,
+    blockJS: false,
+    blockDangerousJS: true,
+    mdxOptions: {
+      ...props.options?.mdxOptions,
+    },
+  };
+
   return (
-    <MDXRemote {...props} components={{ ...components, ...(props.components || {}) }} />
+    <MDXRemote
+      {...props}
+      options={options}
+      components={{ ...components, ...(props.components || {}) }}
+    />
   );
 }
