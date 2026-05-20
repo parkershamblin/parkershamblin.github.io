@@ -1,0 +1,526 @@
+2026-05-17T03:38:13.453Z	Initializing build environment...
+2026-05-17T03:38:15.446Z	Success: Finished initializing build environment
+2026-05-17T03:38:16.112Z	Cloning repository...
+2026-05-17T03:38:19.304Z	Detected the following tools from environment: npm@10.9.2, nodejs@22.16.0
+2026-05-17T03:38:19.306Z	Restoring from dependencies cache
+2026-05-17T03:38:19.308Z	Restoring from build output cache
+2026-05-17T03:38:19.515Z	Installing project dependencies: npm clean-install --progress=false
+2026-05-17T03:38:40.017Z	
+2026-05-17T03:38:40.017Z	added 328 packages, and audited 329 packages in 20s
+2026-05-17T03:38:40.018Z	
+2026-05-17T03:38:40.018Z	140 packages are looking for funding
+2026-05-17T03:38:40.019Z	  run `npm fund` for details
+2026-05-17T03:38:40.172Z	
+2026-05-17T03:38:40.172Z	13 vulnerabilities (6 moderate, 6 high, 1 critical)
+2026-05-17T03:38:40.172Z	
+2026-05-17T03:38:40.173Z	To address issues that do not require attention, run:
+2026-05-17T03:38:40.174Z	  npm audit fix
+2026-05-17T03:38:40.174Z	
+2026-05-17T03:38:40.176Z	To address all issues (including breaking changes), run:
+2026-05-17T03:38:40.176Z	  npm audit fix --force
+2026-05-17T03:38:40.177Z	
+2026-05-17T03:38:40.177Z	Run `npm audit` for details.
+2026-05-17T03:38:40.429Z	Executing user build command: npm run build
+2026-05-17T03:38:40.748Z	
+2026-05-17T03:38:40.748Z	> @once-ui-system/magic-portfolio@2.2.0 build
+2026-05-17T03:38:40.748Z	> next build
+2026-05-17T03:38:40.748Z	
+2026-05-17T03:38:41.516Z	⚠ No build cache found. Please configure build caching for faster rebuilds. Read more: https://nextjs.org/docs/messages/no-cache
+2026-05-17T03:38:41.524Z	Attention: Next.js now collects completely anonymous telemetry regarding usage.
+2026-05-17T03:38:41.529Z	This information is used to shape Next.js' roadmap and prioritize features.
+2026-05-17T03:38:41.530Z	You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+2026-05-17T03:38:41.530Z	https://nextjs.org/telemetry
+2026-05-17T03:38:41.530Z	
+2026-05-17T03:38:41.624Z	   ▲ Next.js 15.4.3
+2026-05-17T03:38:41.624Z	
+2026-05-17T03:38:41.914Z	   Creating an optimized production build ...
+2026-05-17T03:39:28.533Z	 ✓ Compiled successfully in 46s
+2026-05-17T03:39:28.545Z	   Linting and checking validity of types ...
+2026-05-17T03:39:28.960Z	 ⨯ ESLint: Failed to load config "next/core-web-vitals" to extend from. Referenced from: /opt/buildhome/repo/.eslintrc.json
+2026-05-17T03:39:36.343Z	   Collecting page data ...
+2026-05-17T03:39:40.711Z	   Generating static pages (0/24) ...
+2026-05-17T03:39:42.039Z	   Generating static pages (6/24) 
+2026-05-17T03:39:42.635Z	   Generating static pages (12/24) 
+2026-05-17T03:39:42.942Z	   Generating static pages (18/24) 
+2026-05-17T03:39:42.943Z	 ✓ Generating static pages (24/24)
+2026-05-17T03:39:43.381Z	   Finalizing page optimization ...
+2026-05-17T03:39:43.381Z	   Collecting build traces ...
+2026-05-17T03:39:53.746Z	   Exporting (0/3) ...
+2026-05-17T03:39:54.430Z	 ✓ Exporting (3/3)
+2026-05-17T03:39:54.451Z	
+2026-05-17T03:39:54.456Z	Route (app)                                                            Size  First Load JS
+2026-05-17T03:39:54.456Z	┌ ○ /                                                               1.51 kB         372 kB
+2026-05-17T03:39:54.456Z	├ ○ /_not-found                                                       132 B         101 kB
+2026-05-17T03:39:54.456Z	├ ○ /about                                                          1.24 kB         362 kB
+2026-05-17T03:39:54.456Z	├ ○ /blog                                                           1.51 kB         372 kB
+2026-05-17T03:39:54.457Z	├ ● /blog/[slug]                                                      589 B         371 kB
+2026-05-17T03:39:54.457Z	├   ├ /blog/blog
+2026-05-17T03:39:54.457Z	├   ├ /blog/components
+2026-05-17T03:39:54.461Z	├   ├ /blog/content
+2026-05-17T03:39:54.461Z	├   └ [+8 more paths]
+2026-05-17T03:39:54.463Z	├ ○ /gallery                                                        4.79 kB         365 kB
+2026-05-17T03:39:54.463Z	├ ○ /robots.txt                                                       132 B         101 kB
+2026-05-17T03:39:54.463Z	├ ○ /sitemap.xml                                                      132 B         101 kB
+2026-05-17T03:39:54.464Z	├ ○ /work                                                             589 B         371 kB
+2026-05-17T03:39:54.464Z	└ ● /work/[slug]                                                      589 B         371 kB
+2026-05-17T03:39:54.466Z	    ├ /work/OSRS-computer-vision-project
+2026-05-17T03:39:54.466Z	    └ /work/roadside-construction-safety-training-project-unity-vr
+2026-05-17T03:39:54.466Z	+ First Load JS shared by all                                        101 kB
+2026-05-17T03:39:54.466Z	  ├ chunks/4bd1b696-9911af18dede28aa.js                             54.1 kB
+2026-05-17T03:39:54.467Z	  ├ chunks/964-5fa0a71b389189d9.js                                  43.9 kB
+2026-05-17T03:39:54.467Z	  └ other shared chunks (total)                                     2.69 kB
+2026-05-17T03:39:54.467Z	
+2026-05-17T03:39:54.467Z	
+2026-05-17T03:39:54.467Z	○  (Static)  prerendered as static content
+2026-05-17T03:39:54.467Z	●  (SSG)     prerendered as static HTML (uses generateStaticParams)
+2026-05-17T03:39:54.467Z	
+2026-05-17T03:39:54.682Z	Success: Build command completed
+2026-05-17T03:39:54.933Z	Executing user deploy command: npx wrangler deploy
+2026-05-17T03:39:56.716Z	npm warn exec The following package was not found and will be installed: wrangler@4.92.0
+2026-05-17T03:40:08.657Z	
+2026-05-17T03:40:08.658Z	 ⛅️ wrangler 4.92.0
+2026-05-17T03:40:08.658Z	───────────────────
+2026-05-17T03:40:08.947Z	
+2026-05-17T03:40:08.948Z	Detected Project Settings:
+2026-05-17T03:40:08.949Z	 - Worker Name: portfolio
+2026-05-17T03:40:08.949Z	 - Framework: Next.js
+2026-05-17T03:40:08.950Z	 - Build Command: npm run build
+2026-05-17T03:40:08.950Z	 - Output Directory: .next
+2026-05-17T03:40:08.951Z	
+2026-05-17T03:40:08.952Z	? Do you want to modify these settings?
+2026-05-17T03:40:08.952Z	🤖 Using fallback value in non-interactive context: no
+2026-05-17T03:40:08.957Z	
+2026-05-17T03:40:08.958Z	📦 Install packages:
+2026-05-17T03:40:08.961Z	 - wrangler (devDependency)
+2026-05-17T03:40:08.961Z	
+2026-05-17T03:40:08.961Z	📝 Update package.json scripts:
+2026-05-17T03:40:08.962Z	 - "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy"
+2026-05-17T03:40:08.962Z	 - "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview"
+2026-05-17T03:40:08.962Z	
+2026-05-17T03:40:08.962Z	📄 Create wrangler.jsonc:
+2026-05-17T03:40:08.962Z	  {
+2026-05-17T03:40:08.962Z	    "$schema": "node_modules/wrangler/config-schema.json",
+2026-05-17T03:40:08.962Z	    "name": "portfolio",
+2026-05-17T03:40:08.962Z	    "compatibility_date": "2026-05-17",
+2026-05-17T03:40:08.962Z	    "observability": {
+2026-05-17T03:40:08.962Z	      "enabled": true
+2026-05-17T03:40:08.962Z	    },
+2026-05-17T03:40:08.962Z	    "compatibility_flags": [
+2026-05-17T03:40:08.962Z	      "nodejs_compat"
+2026-05-17T03:40:08.962Z	    ]
+2026-05-17T03:40:08.962Z	  }
+2026-05-17T03:40:08.962Z	
+2026-05-17T03:40:08.962Z	🛠️  Configuring project for Next.js with OpenNext by running `@opennextjs/cloudflare migrate`
+2026-05-17T03:40:08.963Z	
+2026-05-17T03:40:08.963Z	? Proceed with setup?
+2026-05-17T03:40:08.963Z	🤖 Using fallback value in non-interactive context: yes
+2026-05-17T03:40:17.779Z	npm warn exec The following package was not found and will be installed: @opennextjs/cloudflare@1.19.10
+2026-05-17T03:40:43.926Z	npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+2026-05-17T03:40:44.698Z	npm warn deprecated glob@9.3.5: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+2026-05-17T03:40:58.638Z	
+2026-05-17T03:40:58.639Z	┌───────────────────────────────┐
+2026-05-17T03:40:58.640Z	│ OpenNext — Cloudflare migrate │
+2026-05-17T03:40:58.640Z	└───────────────────────────────┘
+2026-05-17T03:40:58.640Z	
+2026-05-17T03:40:58.640Z	🚀 Setting up the OpenNext Cloudflare adapter...
+2026-05-17T03:40:58.640Z	
+2026-05-17T03:40:58.653Z	⚙️  Installing dependencies...
+2026-05-17T03:40:58.653Z	
+2026-05-17T03:40:58.908Z	npm warn using --force Recommended protections disabled.
+2026-05-17T03:41:09.073Z	npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+2026-05-17T03:41:09.508Z	npm warn deprecated glob@9.3.5: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+2026-05-17T03:41:20.423Z	
+2026-05-17T03:41:20.424Z	added 281 packages, changed 6 packages, and audited 642 packages in 22s
+2026-05-17T03:41:20.424Z	
+2026-05-17T03:41:20.424Z	209 packages are looking for funding
+2026-05-17T03:41:20.424Z	  run `npm fund` for details
+2026-05-17T03:41:20.475Z	
+2026-05-17T03:41:20.476Z	15 vulnerabilities (9 moderate, 6 high)
+2026-05-17T03:41:20.476Z	
+2026-05-17T03:41:20.476Z	To address issues that do not require attention, run:
+2026-05-17T03:41:20.476Z	  npm audit fix
+2026-05-17T03:41:20.476Z	
+2026-05-17T03:41:20.476Z	To address all issues possible (including breaking changes), run:
+2026-05-17T03:41:20.476Z	  npm audit fix --force
+2026-05-17T03:41:20.476Z	
+2026-05-17T03:41:20.476Z	Some issues need review, and may require choosing
+2026-05-17T03:41:20.476Z	a different dependency.
+2026-05-17T03:41:20.476Z	
+2026-05-17T03:41:20.476Z	Run `npm audit` for details.
+2026-05-17T03:41:20.718Z	npm warn using --force Recommended protections disabled.
+2026-05-17T03:41:26.391Z	
+2026-05-17T03:41:26.391Z	added 2 packages, and audited 644 packages in 6s
+2026-05-17T03:41:26.391Z	
+2026-05-17T03:41:26.391Z	209 packages are looking for funding
+2026-05-17T03:41:26.391Z	  run `npm fund` for details
+2026-05-17T03:41:26.431Z	
+2026-05-17T03:41:26.432Z	15 vulnerabilities (9 moderate, 6 high)
+2026-05-17T03:41:26.433Z	
+2026-05-17T03:41:26.433Z	To address issues that do not require attention, run:
+2026-05-17T03:41:26.433Z	  npm audit fix
+2026-05-17T03:41:26.434Z	
+2026-05-17T03:41:26.435Z	To address all issues possible (including breaking changes), run:
+2026-05-17T03:41:26.435Z	  npm audit fix --force
+2026-05-17T03:41:26.435Z	
+2026-05-17T03:41:26.435Z	Some issues need review, and may require choosing
+2026-05-17T03:41:26.435Z	a different dependency.
+2026-05-17T03:41:26.436Z	
+2026-05-17T03:41:26.436Z	Run `npm audit` for details.
+2026-05-17T03:41:26.478Z	⚙️  Creating wrangler.jsonc...
+2026-05-17T03:41:26.478Z	
+2026-05-17T03:41:29.068Z	WARN Failed to set up cache for your project.
+2026-05-17T03:41:29.068Z	After the migration completes, please manually setup cache in  wrangler.jsonc and open-next.config.ts files (for more details see: https://opennext.js.org/cloudflare/caching).
+2026-05-17T03:41:29.068Z	
+2026-05-17T03:41:29.069Z	⚙️  Creating open-next.config.ts...
+2026-05-17T03:41:29.069Z	
+2026-05-17T03:41:29.081Z	⚙️  Creating .dev.vars file...
+2026-05-17T03:41:29.081Z	
+2026-05-17T03:41:29.081Z	⚙️  Creating public/_headers file...
+2026-05-17T03:41:29.081Z	
+2026-05-17T03:41:29.081Z	⚙️  Updating package.json scripts...
+2026-05-17T03:41:29.082Z	
+2026-05-17T03:41:29.082Z	⚙️  Updating .gitignore file...
+2026-05-17T03:41:29.082Z	
+2026-05-17T03:41:29.083Z	⚙️  Updating Next.js config...
+2026-05-17T03:41:29.083Z	
+2026-05-17T03:41:29.083Z	⚙️  Checking for edge runtime usage...
+2026-05-17T03:41:29.083Z	
+2026-05-17T03:41:29.096Z	🎉 OpenNext Cloudflare adapter complete!
+2026-05-17T03:41:29.097Z	
+2026-05-17T03:41:29.097Z	Next steps:
+2026-05-17T03:41:29.097Z	- Run: "npm run preview" to build and preview your Cloudflare application locally
+2026-05-17T03:41:29.097Z	- Run: "npm run deploy" to deploy your application to Cloudflare Workers
+2026-05-17T03:41:29.097Z	- ⚠️  Setup cache, see https://opennext.js.org/cloudflare/caching for more details
+2026-05-17T03:41:29.097Z	
+2026-05-17T03:41:29.231Z	├ Adding Wrangler files to the .gitignore file
+2026-05-17T03:41:29.231Z	│ updated .gitignore file
+2026-05-17T03:41:29.231Z	│
+2026-05-17T03:41:29.231Z	[build] Running: npx opennextjs-cloudflare build
+2026-05-17T03:41:31.886Z	[build] 
+2026-05-17T03:41:31.894Z	[build] ┌─────────────────────────────┐
+2026-05-17T03:41:31.894Z	[build] │ OpenNext — Cloudflare build │
+2026-05-17T03:41:31.894Z	[build] └─────────────────────────────┘
+2026-05-17T03:41:31.894Z	[build] 
+2026-05-17T03:41:31.894Z	[build] 
+2026-05-17T03:41:32.025Z	[build] App directory: /opt/buildhome/repo
+2026-05-17T03:41:32.026Z	[build] 
+2026-05-17T03:41:32.026Z	[build] Next.js version : 15.5.18
+2026-05-17T03:41:32.026Z	[build] 
+2026-05-17T03:41:32.027Z	[build] @opennextjs/cloudflare version: 1.19.10
+2026-05-17T03:41:32.028Z	[build] @opennextjs/aws version: 4.0.2
+2026-05-17T03:41:32.028Z	[build] workerd compatibility_date: 2026-05-17
+2026-05-17T03:41:32.028Z	[build] 
+2026-05-17T03:41:32.032Z	[build] 
+2026-05-17T03:41:32.032Z	[build] ┌─────────────────────────────────┐
+2026-05-17T03:41:32.032Z	[build] │ OpenNext — Building Next.js app │
+2026-05-17T03:41:32.032Z	[build] └─────────────────────────────────┘
+2026-05-17T03:41:32.032Z	[build] 
+2026-05-17T03:41:32.032Z	[build] 
+2026-05-17T03:41:32.222Z	[build] 
+2026-05-17T03:41:32.223Z	[build] > @once-ui-system/magic-portfolio@2.2.0 build
+2026-05-17T03:41:32.223Z	[build] > next build
+2026-05-17T03:41:32.223Z	[build] 
+2026-05-17T03:41:32.223Z	[build] 
+2026-05-17T03:41:33.003Z	[build]    ▲ Next.js 15.5.18
+2026-05-17T03:41:33.003Z	[build] 
+2026-05-17T03:41:33.004Z	[build] 
+2026-05-17T03:41:34.317Z	[build] Using secrets defined in .dev.vars
+2026-05-17T03:41:34.318Z	[build] 
+2026-05-17T03:41:34.378Z	[build]    Creating an optimized production build ...
+2026-05-17T03:41:34.380Z	[build] 
+2026-05-17T03:42:20.689Z	[build]  ✓ Compiled successfully in 46s
+2026-05-17T03:42:20.690Z	[build] 
+2026-05-17T03:42:20.705Z	[build]    Linting and checking validity of types ...
+2026-05-17T03:42:20.706Z	[build] 
+2026-05-17T03:42:21.129Z	[build]  ⨯ ESLint: Failed to load config "next/core-web-vitals" to extend from. Referenced from: /opt/buildhome/repo/.eslintrc.json
+2026-05-17T03:42:21.129Z	[build] 
+2026-05-17T03:42:30.945Z	[build]    Collecting page data ...
+2026-05-17T03:42:30.946Z	[build] 
+2026-05-17T03:42:35.969Z	[build]    Generating static pages (0/24) ...
+2026-05-17T03:42:35.970Z	[build] 
+2026-05-17T03:42:37.678Z	[build]    Generating static pages (6/24) 
+2026-05-17T03:42:37.680Z	[build] 
+2026-05-17T03:42:38.252Z	[build]    Generating static pages (12/24) 
+2026-05-17T03:42:38.252Z	[build] 
+2026-05-17T03:42:38.564Z	[build]    Generating static pages (18/24) 
+2026-05-17T03:42:38.566Z	[build]  ✓ Generating static pages (24/24)
+2026-05-17T03:42:38.567Z	[build] 
+2026-05-17T03:42:39.230Z	[build]    Finalizing page optimization ...
+2026-05-17T03:42:39.231Z	[build] 
+2026-05-17T03:42:39.232Z	[build]    Collecting build traces ...
+2026-05-17T03:42:39.232Z	[build] 
+2026-05-17T03:42:48.490Z	[build]    Exporting (0/2) ...
+2026-05-17T03:42:48.490Z	[build] 
+2026-05-17T03:42:48.782Z	[build]  ✓ Exporting (2/2)
+2026-05-17T03:42:48.783Z	[build] 
+2026-05-17T03:42:48.802Z	[build] 
+2026-05-17T03:42:48.802Z	[build] 
+2026-05-17T03:42:48.808Z	[build] Route (app)                                                            Size  First Load JS
+2026-05-17T03:42:48.808Z	[build] ┌ ○ /                                                               1.51 kB         371 kB
+2026-05-17T03:42:48.808Z	[build] ├ ○ /_not-found                                                       132 B         103 kB
+2026-05-17T03:42:48.808Z	[build] ├ ○ /about                                                          1.24 kB         360 kB
+2026-05-17T03:42:48.808Z	[build] ├ ○ /blog                                                           1.51 kB         371 kB
+2026-05-17T03:42:48.808Z	[build] ├ ● /blog/[slug]                                                      589 B         370 kB
+2026-05-17T03:42:48.811Z	[build] ├   ├ /blog/blog
+2026-05-17T03:42:48.811Z	[build] ├   ├ /blog/components
+2026-05-17T03:42:48.811Z	[build] ├   ├ /blog/content
+2026-05-17T03:42:48.811Z	[build] ├   └ [+8 more paths]
+2026-05-17T03:42:48.811Z	[build] ├ ○ /gallery                                                        4.81 kB         364 kB
+2026-05-17T03:42:48.811Z	[build] ├ ○ /robots.txt                                                       132 B         103 kB
+2026-05-17T03:42:48.811Z	[build] ├ ○ /sitemap.xml                                                      132 B         103 kB
+2026-05-17T03:42:48.811Z	[build] ├ ○ /work                                                             589 B         370 kB
+2026-05-17T03:42:48.811Z	[build] └ ● /work/[slug]                                                      589 B         370 kB
+2026-05-17T03:42:48.811Z	[build]     ├ /work/OSRS-computer-vision-project
+2026-05-17T03:42:48.811Z	[build]     └ /work/roadside-construction-safety-training-project-unity-vr
+2026-05-17T03:42:48.811Z	[build] + First Load JS shared by all                                        103 kB
+2026-05-17T03:42:48.811Z	[build]   ├ chunks/255-6ab3e064d17002d6.js                                    46 kB
+2026-05-17T03:42:48.811Z	[build]   ├ chunks/4bd1b696-409494caf8c83275.js                             54.2 kB
+2026-05-17T03:42:48.811Z	[build]   └ other shared chunks (total)                                     2.68 kB
+2026-05-17T03:42:48.812Z	[build] 
+2026-05-17T03:42:48.812Z	[build] 
+2026-05-17T03:42:48.812Z	[build] 
+2026-05-17T03:42:48.812Z	[build] ○  (Static)  prerendered as static content
+2026-05-17T03:42:48.812Z	[build] ●  (SSG)     prerendered as static HTML (uses generateStaticParams)
+2026-05-17T03:42:48.812Z	[build] 
+2026-05-17T03:42:48.812Z	[build] 
+2026-05-17T03:42:48.996Z	[build] 
+2026-05-17T03:42:48.996Z	[build] ┌──────────────────────────────┐
+2026-05-17T03:42:48.996Z	[build] │ OpenNext — Generating bundle │
+2026-05-17T03:42:48.996Z	[build] └──────────────────────────────┘
+2026-05-17T03:42:48.996Z	[build] 
+2026-05-17T03:42:48.996Z	[build] 
+2026-05-17T03:42:49.121Z	[build] Bundling middleware function...
+2026-05-17T03:42:49.122Z	[build] 
+2026-05-17T03:42:49.185Z	[build] Bundling static assets...
+2026-05-17T03:42:49.189Z	[build] 
+2026-05-17T03:42:49.403Z	[build] Bundling cache assets...
+2026-05-17T03:42:49.403Z	[build] 
+2026-05-17T03:42:49.408Z	[build] node:fs:442
+2026-05-17T03:42:49.408Z	[build]     return binding.readFileUtf8(path, stringToFlags(options.flag));
+2026-05-17T03:42:49.409Z	[build]                    ^
+2026-05-17T03:42:49.409Z	[build] 
+2026-05-17T03:42:49.410Z	[build] Error: ENOENT: no such file or directory, open '/opt/buildhome/repo/.next/standalone/.next/server/pages-manifest.json'
+2026-05-17T03:42:49.410Z	[build]     at Object.readFileSync (node:fs:442:20)
+2026-05-17T03:42:49.410Z	[build]     at Module.getHtmlPages (file:///opt/buildhome/repo/node_modules/@opennextjs/aws/dist/build/helper.js:193:25)
+2026-05-17T03:42:49.410Z	[build]     at createCacheAssets (file:///opt/buildhome/repo/node_modules/@opennextjs/aws/dist/build/createAssets.js:77:35)
+2026-05-17T03:42:49.411Z	[build]     at build (file:///opt/buildhome/repo/node_modules/@opennextjs/cloudflare/dist/cli/build/build.js:82:44)
+2026-05-17T03:42:49.411Z	[build]     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-05-17T03:42:49.411Z	[build]     at async buildCommand (file:///opt/buildhome/repo/node_modules/@opennextjs/cloudflare/dist/cli/commands/build.js:40:5) {
+2026-05-17T03:42:49.411Z	[build]   errno: -2,
+2026-05-17T03:42:49.411Z	[build]   code: 'ENOENT',
+2026-05-17T03:42:49.411Z	[build]   syscall: 'open',
+2026-05-17T03:42:49.411Z	[build]   path: '/opt/buildhome/repo/.next/standalone/.next/server/pages-manifest.json'
+2026-05-17T03:42:49.411Z	[build] }
+2026-05-17T03:42:49.411Z	[build] 
+2026-05-17T03:42:49.411Z	[build] Node.js v22.16.0
+2026-05-17T03:42:49.411Z	[build] 
+2026-05-17T03:42:49.572Z	✘ [ERROR] Error: Command failed with exit code 1: npx opennextjs-cloudflare build
+2026-05-17T03:42:49.572Z	
+2026-05-17T03:42:49.572Z	   ⨯ ESLint: Failed to load config "next/core-web-vitals" to extend from. Referenced from: /opt/buildhome/repo/.eslintrc.json
+2026-05-17T03:42:49.572Z	  node:fs:442
+2026-05-17T03:42:49.572Z	      return binding.readFileUtf8(path, stringToFlags(options.flag));
+2026-05-17T03:42:49.574Z	                     ^
+2026-05-17T03:42:49.574Z	  
+2026-05-17T03:42:49.574Z	  Error: ENOENT: no such file or directory, open '/opt/buildhome/repo/.next/standalone/.next/server/pages-manifest.json'
+2026-05-17T03:42:49.574Z	      at Object.readFileSync (node:fs:442:20)
+2026-05-17T03:42:49.574Z	      at Module.getHtmlPages (file:///opt/buildhome/repo/node_modules/@opennextjs/aws/dist/build/helper.js:193:25)
+2026-05-17T03:42:49.574Z	      at createCacheAssets (file:///opt/buildhome/repo/node_modules/@opennextjs/aws/dist/build/createAssets.js:77:35)
+2026-05-17T03:42:49.574Z	      at build (file:///opt/buildhome/repo/node_modules/@opennextjs/cloudflare/dist/cli/build/build.js:82:44)
+2026-05-17T03:42:49.574Z	      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-05-17T03:42:49.574Z	      at async buildCommand (file:///opt/buildhome/repo/node_modules/@opennextjs/cloudflare/dist/cli/commands/build.js:40:5) {
+2026-05-17T03:42:49.574Z	    errno: -2,
+2026-05-17T03:42:49.574Z	    code: 'ENOENT',
+2026-05-17T03:42:49.575Z	    syscall: 'open',
+2026-05-17T03:42:49.575Z	    path: '/opt/buildhome/repo/.next/standalone/.next/server/pages-manifest.json'
+2026-05-17T03:42:49.575Z	  }
+2026-05-17T03:42:49.575Z	  
+2026-05-17T03:42:49.575Z	  Node.js v22.16.0
+2026-05-17T03:42:49.575Z	  
+2026-05-17T03:42:49.575Z	  ┌─────────────────────────────┐
+2026-05-17T03:42:49.575Z	  │ OpenNext — Cloudflare build │
+2026-05-17T03:42:49.576Z	  └─────────────────────────────┘
+2026-05-17T03:42:49.576Z	  
+2026-05-17T03:42:49.576Z	  App directory: /opt/buildhome/repo
+2026-05-17T03:42:49.576Z	  Next.js version : 15.5.18
+2026-05-17T03:42:49.576Z	  @opennextjs/cloudflare version: 1.19.10
+2026-05-17T03:42:49.576Z	  @opennextjs/aws version: 4.0.2
+2026-05-17T03:42:49.577Z	  workerd compatibility_date: 2026-05-17
+2026-05-17T03:42:49.577Z	  
+2026-05-17T03:42:49.577Z	  ┌─────────────────────────────────┐
+2026-05-17T03:42:49.577Z	  │ OpenNext — Building Next.js app │
+2026-05-17T03:42:49.577Z	  └─────────────────────────────────┘
+2026-05-17T03:42:49.577Z	  
+2026-05-17T03:42:49.580Z	  
+2026-05-17T03:42:49.581Z	  > @once-ui-system/magic-portfolio@2.2.0 build
+2026-05-17T03:42:49.581Z	  > next build
+2026-05-17T03:42:49.582Z	  
+2026-05-17T03:42:49.582Z	     ▲ Next.js 15.5.18
+2026-05-17T03:42:49.582Z	  
+2026-05-17T03:42:49.582Z	  Using secrets defined in .dev.vars
+2026-05-17T03:42:49.583Z	     Creating an optimized production build ...
+2026-05-17T03:42:49.583Z	   ✓ Compiled successfully in 46s
+2026-05-17T03:42:49.583Z	     Linting and checking validity of types ...
+2026-05-17T03:42:49.583Z	     Collecting page data ...
+2026-05-17T03:42:49.583Z	     Generating static pages (0/24) ...
+2026-05-17T03:42:49.584Z	     Generating static pages (6/24) 
+2026-05-17T03:42:49.584Z	     Generating static pages (12/24) 
+2026-05-17T03:42:49.584Z	     Generating static pages (18/24) 
+2026-05-17T03:42:49.584Z	   ✓ Generating static pages (24/24)
+2026-05-17T03:42:49.585Z	     Finalizing page optimization ...
+2026-05-17T03:42:49.585Z	     Collecting build traces ...
+2026-05-17T03:42:49.585Z	     Exporting (0/2) ...
+2026-05-17T03:42:49.585Z	   ✓ Exporting (2/2)
+2026-05-17T03:42:49.585Z	  
+2026-05-17T03:42:49.585Z	  Route (app)                                                            Size  First Load JS
+2026-05-17T03:42:49.585Z	  ┌ ○ /                                                               1.51 kB         371 kB
+2026-05-17T03:42:49.585Z	  ├ ○ /_not-found                                                       132 B         103 kB
+2026-05-17T03:42:49.585Z	  ├ ○ /about                                                          1.24 kB         360 kB
+2026-05-17T03:42:49.585Z	  ├ ○ /blog                                                           1.51 kB         371 kB
+2026-05-17T03:42:49.586Z	  ├ ● /blog/[slug]                                                      589 B         370 kB
+2026-05-17T03:42:49.586Z	  ├   ├ /blog/blog
+2026-05-17T03:42:49.586Z	  ├   ├ /blog/components
+2026-05-17T03:42:49.586Z	  ├   ├ /blog/content
+2026-05-17T03:42:49.586Z	  ├   └ [+8 more paths]
+2026-05-17T03:42:49.586Z	  ├ ○ /gallery                                                        4.81 kB         364 kB
+2026-05-17T03:42:49.586Z	  ├ ○ /robots.txt                                                       132 B         103 kB
+2026-05-17T03:42:49.586Z	  ├ ○ /sitemap.xml                                                      132 B         103 kB
+2026-05-17T03:42:49.586Z	  ├ ○ /work                                                             589 B         370 kB
+2026-05-17T03:42:49.586Z	  └ ● /work/[slug]                                                      589 B         370 kB
+2026-05-17T03:42:49.586Z	      ├ /work/OSRS-computer-vision-project
+2026-05-17T03:42:49.586Z	      └ /work/roadside-construction-safety-training-project-unity-vr
+2026-05-17T03:42:49.586Z	  + First Load JS shared by all                                        103 kB
+2026-05-17T03:42:49.586Z	    ├ chunks/255-6ab3e064d17002d6.js                                    46 kB
+2026-05-17T03:42:49.587Z	    ├ chunks/4bd1b696-409494caf8c83275.js                             54.2 kB
+2026-05-17T03:42:49.587Z	    └ other shared chunks (total)                                     2.68 kB
+2026-05-17T03:42:49.587Z	  
+2026-05-17T03:42:49.587Z	  
+2026-05-17T03:42:49.587Z	  ○  (Static)  prerendered as static content
+2026-05-17T03:42:49.587Z	  ●  (SSG)     prerendered as static HTML (uses generateStaticParams)
+2026-05-17T03:42:49.587Z	  
+2026-05-17T03:42:49.587Z	  
+2026-05-17T03:42:49.587Z	  ┌──────────────────────────────┐
+2026-05-17T03:42:49.587Z	  │ OpenNext — Generating bundle │
+2026-05-17T03:42:49.587Z	  └──────────────────────────────┘
+2026-05-17T03:42:49.587Z	  
+2026-05-17T03:42:49.588Z	  Bundling middleware function...
+2026-05-17T03:42:49.588Z	  Bundling static assets...
+2026-05-17T03:42:49.588Z	  Bundling cache assets...
+2026-05-17T03:42:49.588Z	      at makeError (/opt/buildhome/.npm/_npx/32026684e21afda6/node_modules/wrangler/wrangler-dist/cli.js:55118:18)
+2026-05-17T03:42:49.588Z	      at handlePromise (/opt/buildhome/.npm/_npx/32026684e21afda6/node_modules/wrangler/wrangler-dist/cli.js:55585:29)
+2026-05-17T03:42:49.589Z	      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-05-17T03:42:49.589Z	      at async runCommand (/opt/buildhome/.npm/_npx/32026684e21afda6/node_modules/wrangler/wrangler-dist/cli.js:136982:5)
+2026-05-17T03:42:49.589Z	      at async runAutoConfig (/opt/buildhome/.npm/_npx/32026684e21afda6/node_modules/wrangler/wrangler-dist/cli.js:230359:7)
+2026-05-17T03:42:49.589Z	      at async maybeRunAutoConfig (/opt/buildhome/.npm/_npx/32026684e21afda6/node_modules/wrangler/wrangler-dist/cli.js:230559:35)
+2026-05-17T03:42:49.589Z	      at async Object.handler (/opt/buildhome/.npm/_npx/32026684e21afda6/node_modules/wrangler/wrangler-dist/cli.js:230894:34)
+2026-05-17T03:42:49.589Z	      at async /opt/buildhome/.npm/_npx/32026684e21afda6/node_modules/wrangler/wrangler-dist/cli.js:179097:26
+2026-05-17T03:42:49.589Z	      at async Object.handler (/opt/buildhome/.npm/_npx/32026684e21afda6/node_modules/wrangler/wrangler-dist/cli.js:179046:7) {
+2026-05-17T03:42:49.589Z	    shortMessage: 'Command failed with exit code 1: npx opennextjs-cloudflare build',
+2026-05-17T03:42:49.589Z	    command: 'npx opennextjs-cloudflare build',
+2026-05-17T03:42:49.591Z	    escapedCommand: 'npx opennextjs-cloudflare build',
+2026-05-17T03:42:49.591Z	    exitCode: 1,
+2026-05-17T03:42:49.591Z	    signal: undefined,
+2026-05-17T03:42:49.591Z	    signalDescription: undefined,
+2026-05-17T03:42:49.591Z	    stdout: '\n' +
+2026-05-17T03:42:49.591Z	      '┌─────────────────────────────┐\n' +
+2026-05-17T03:42:49.592Z	      '│ OpenNext — Cloudflare build │\n' +
+2026-05-17T03:42:49.592Z	      '└─────────────────────────────┘\n' +
+2026-05-17T03:42:49.592Z	      '\n' +
+2026-05-17T03:42:49.592Z	      'App directory: /opt/buildhome/repo\n' +
+2026-05-17T03:42:49.592Z	      'Next.js version : 15.5.18\n' +
+2026-05-17T03:42:49.592Z	      '@opennextjs/cloudflare version: 1.19.10\n' +
+2026-05-17T03:42:49.592Z	      '@opennextjs/aws version: 4.0.2\n' +
+2026-05-17T03:42:49.592Z	      'workerd compatibility_date: 2026-05-17\n' +
+2026-05-17T03:42:49.592Z	      '\n' +
+2026-05-17T03:42:49.592Z	      '┌─────────────────────────────────┐\n' +
+2026-05-17T03:42:49.592Z	      '│ OpenNext — Building Next.js app │\n' +
+2026-05-17T03:42:49.593Z	      '└─────────────────────────────────┘\n' +
+2026-05-17T03:42:49.593Z	      '\n' +
+2026-05-17T03:42:49.593Z	      '\n' +
+2026-05-17T03:42:49.593Z	      '> @once-ui-system/magic-portfolio@2.2.0 build\n' +
+2026-05-17T03:42:49.593Z	      '> next build\n' +
+2026-05-17T03:42:49.593Z	      '\n' +
+2026-05-17T03:42:49.593Z	      '   ▲ Next.js 15.5.18\n' +
+2026-05-17T03:42:49.593Z	      '\n' +
+2026-05-17T03:42:49.593Z	      'Using secrets defined in .dev.vars\n' +
+2026-05-17T03:42:49.593Z	      '   Creating an optimized production build ...\n' +
+2026-05-17T03:42:49.593Z	      ' ✓ Compiled successfully in 46s\n' +
+2026-05-17T03:42:49.593Z	      '   Linting and checking validity of types ...\n' +
+2026-05-17T03:42:49.593Z	      '   Collecting page data ...\n' +
+2026-05-17T03:42:49.593Z	      '   Generating static pages (0/24) ...\n' +
+2026-05-17T03:42:49.593Z	      '   Generating static pages (6/24) \r\n' +
+2026-05-17T03:42:49.593Z	      '   Generating static pages (12/24) \r\n' +
+2026-05-17T03:42:49.593Z	      '   Generating static pages (18/24) \r\n' +
+2026-05-17T03:42:49.593Z	      ' ✓ Generating static pages (24/24)\n' +
+2026-05-17T03:42:49.594Z	      '   Finalizing page optimization ...\n' +
+2026-05-17T03:42:49.594Z	      '   Collecting build traces ...\n' +
+2026-05-17T03:42:49.594Z	      '   Exporting (0/2) ...\n' +
+2026-05-17T03:42:49.594Z	      ' ✓ Exporting (2/2)\n' +
+2026-05-17T03:42:49.594Z	      '\n' +
+2026-05-17T03:42:49.594Z	      'Route (app)                                                            Size  First Load JS\n' +
+2026-05-17T03:42:49.594Z	      '┌ ○ /                                                               1.51 kB         371 kB\n' +
+2026-05-17T03:42:49.594Z	      '├ ○ /_not-found                                                       132 B         103 kB\n' +
+2026-05-17T03:42:49.594Z	      '├ ○ /about                                                          1.24 kB         360 kB\n' +
+2026-05-17T03:42:49.594Z	      '├ ○ /blog                                                           1.51 kB         371 kB\n' +
+2026-05-17T03:42:49.594Z	      '├ ● /blog/[slug]                                                      589 B         370 kB\n' +
+2026-05-17T03:42:49.594Z	      '├   ├ /blog/blog\n' +
+2026-05-17T03:42:49.594Z	      '├   ├ /blog/components\n' +
+2026-05-17T03:42:49.594Z	      '├   ├ /blog/content\n' +
+2026-05-17T03:42:49.595Z	      '├   └ [+8 more paths]\n' +
+2026-05-17T03:42:49.595Z	      '├ ○ /gallery                                                        4.81 kB         364 kB\n' +
+2026-05-17T03:42:49.595Z	      '├ ○ /robots.txt                                                       132 B         103 kB\n' +
+2026-05-17T03:42:49.595Z	      '├ ○ /sitemap.xml                                                      132 B         103 kB\n' +
+2026-05-17T03:42:49.595Z	      '├ ○ /work                                                             589 B         370 kB\n' +
+2026-05-17T03:42:49.595Z	      '└ ● /work/[slug]                                                      589 B         370 kB\n' +
+2026-05-17T03:42:49.595Z	      '    ├ /work/OSRS-computer-vision-project\n' +
+2026-05-17T03:42:49.595Z	      '    └ /work/roadside-construction-safety-training-project-unity-vr\n' +
+2026-05-17T03:42:49.595Z	      '+ First Load JS shared by all                                        103 kB\n' +
+2026-05-17T03:42:49.595Z	      '  ├ chunks/255-6ab3e064d17002d6.js                                    46 kB\n' +
+2026-05-17T03:42:49.595Z	      '  ├ chunks/4bd1b696-409494caf8c83275.js                             54.2 kB\n' +
+2026-05-17T03:42:49.595Z	      '  └ other shared chunks (total)                                     2.68 kB\n' +
+2026-05-17T03:42:49.595Z	      '\n' +
+2026-05-17T03:42:49.595Z	      '\n' +
+2026-05-17T03:42:49.596Z	      '○  (Static)  prerendered as static content\n' +
+2026-05-17T03:42:49.596Z	      '●  (SSG)     prerendered as static HTML (uses generateStaticParams)\n' +
+2026-05-17T03:42:49.596Z	      '\n' +
+2026-05-17T03:42:49.596Z	      '\n' +
+2026-05-17T03:42:49.596Z	      '┌──────────────────────────────┐\n' +
+2026-05-17T03:42:49.596Z	      '│ OpenNext — Generating bundle │\n' +
+2026-05-17T03:42:49.596Z	      '└──────────────────────────────┘\n' +
+2026-05-17T03:42:49.596Z	      '\n' +
+2026-05-17T03:42:49.597Z	      'Bundling middleware function...\n' +
+2026-05-17T03:42:49.597Z	      'Bundling static assets...\n' +
+2026-05-17T03:42:49.597Z	      'Bundling cache assets...',
+2026-05-17T03:42:49.597Z	    stderr: ' ⨯ ESLint: Failed to load config "next/core-web-vitals" to extend from. Referenced from: /opt/buildhome/repo/.eslintrc.json\n' +
+2026-05-17T03:42:49.597Z	      'node:fs:442\n' +
+2026-05-17T03:42:49.597Z	      '    return binding.readFileUtf8(path, stringToFlags(options.flag));\n' +
+2026-05-17T03:42:49.597Z	      '                   ^\n' +
+2026-05-17T03:42:49.597Z	      '\n' +
+2026-05-17T03:42:49.597Z	      "Error: ENOENT: no such file or directory, open '/opt/buildhome/repo/.next/standalone/.next/server/pages-manifest.json'\n" +
+2026-05-17T03:42:49.597Z	      '    at Object.readFileSync (node:fs:442:20)\n' +
+2026-05-17T03:42:49.598Z	      '    at Module.getHtmlPages (file:///opt/buildhome/repo/node_modules/@opennextjs/aws/dist/build/helper.js:193:25)\n' +
+2026-05-17T03:42:49.598Z	      '    at createCacheAssets (file:///opt/buildhome/repo/node_modules/@opennextjs/aws/dist/build/createAssets.js:77:35)\n' +
+2026-05-17T03:42:49.598Z	      '    at build (file:///opt/buildhome/repo/node_modules/@opennextjs/cloudflare/dist/cli/build/build.js:82:44)\n' +
+2026-05-17T03:42:49.598Z	      '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+2026-05-17T03:42:49.598Z	      '    at async buildCommand (file:///opt/buildhome/repo/node_modules/@opennextjs/cloudflare/dist/cli/commands/build.js:40:5) {\n' +
+2026-05-17T03:42:49.598Z	      '  errno: -2,\n' +
+2026-05-17T03:42:49.598Z	      "  code: 'ENOENT',\n" +
+2026-05-17T03:42:49.598Z	      "  syscall: 'open',\n" +
+2026-05-17T03:42:49.598Z	      "  path: '/opt/buildhome/repo/.next/standalone/.next/server/pages-manifest.json'\n" +
+2026-05-17T03:42:49.598Z	      '}\n' +
+2026-05-17T03:42:49.598Z	      '\n' +
+2026-05-17T03:42:49.599Z	      'Node.js v22.16.0',
+2026-05-17T03:42:49.599Z	    failed: true,
+2026-05-17T03:42:49.599Z	    timedOut: false,
+2026-05-17T03:42:49.599Z	    isCanceled: false,
+2026-05-17T03:42:49.599Z	    killed: false
+2026-05-17T03:42:49.599Z	  }
+2026-05-17T03:42:49.599Z	
+2026-05-17T03:42:49.599Z	
+2026-05-17T03:42:49.599Z	✘ [ERROR] Running custom build `npx opennextjs-cloudflare build` failed. There are likely more logs from your build command above.
+2026-05-17T03:42:49.599Z	
+2026-05-17T03:42:49.599Z	
+2026-05-17T03:42:49.600Z	
+2026-05-17T03:42:49.600Z	Cloudflare collects anonymous telemetry about your usage of Wrangler. Learn more at https://github.com/cloudflare/workers-sdk/tree/main/packages/wrangler/telemetry.md
+2026-05-17T03:42:49.600Z	
+2026-05-17T03:42:49.610Z	🪵  Logs were written to "/opt/buildhome/.config/.wrangler/logs/wrangler-2026-05-17_03-40-08_230.log"
+2026-05-17T03:42:49.741Z	Failed: error occurred while running deploy command

@@ -29,12 +29,12 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/parkershamblin",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/parkershamblin",
   },
   {
     name: "YouTube",
@@ -133,20 +133,20 @@ const about = {
       },
       {
         company: "Everyman's Products LLC",
-        timeframe: "Oct 2018 - July 2019",
-        role: "Owner",
+        timeframe: "Oct 2017 - Dec 2019",
+        role: "Company Owner",
         achievements: [
           <>
             Generated $119,000 in product sales on Amazon.com in the first year.
           </>,
           <>
-          Designed five proprietary products, which generated $20,000+ in product sales on Amazon.
+          Designed three products, which generated $20,000+ in product sales on Amazon.
           </>,
           <>
           Developed and deployed a web crawler which extracted product sales data from Amazon.com and helped in deciding which product markets to enter.
           </>,
           <>
-          Collaborated & negotiated with foreign manufacturers on a day-to-day basis.
+          Collaborated & negotiated with foreign manufacturers.
           </>,
         ],
       }
@@ -158,7 +158,7 @@ const about = {
     institutions: [
       {
         name: "University of South Florida",
-        description: <>Bachelor of Science in Computer Science. (2021 - 2026) Flit-GAP $10,000 Annual Scholarship Recipient.</>,
+        description: <>Bachelor of Science in Computer Science. (2021 - 2026). GPA: 3.66/4.00. Flit-GAP $10,000 Annual Scholarship Recipient.</>,
       },
     ],
   },
