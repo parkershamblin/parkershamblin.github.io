@@ -1,5 +1,4 @@
 import {
-  Avatar,
   Button,
   Column,
   Flex,
@@ -9,21 +8,24 @@ import {
   Media,
   Tag,
   Text,
-  Meta,
-  Schema
 } from "@once-ui-system/core";
 import { baseURL, about, person, social } from "@/resources";
+import { ProfileImage, ProfileStructuredData } from "@/components";
 import TableOfContents from "@/components/about/TableOfContents";
 import styles from "@/components/about/about.module.scss";
 import React from "react";
+import { generateProfileImageMetadata } from "@/utils/seo";
 
 export async function generateMetadata() {
-  return Meta.generate({
+  return generateProfileImageMetadata({
     title: about.title,
     description: about.description,
-    baseURL: baseURL,
-    image: `/api/og/generate?title=${encodeURIComponent(about.title)}`,
+    baseURL,
     path: about.path,
+    author: {
+      name: person.name,
+      url: `${baseURL}${about.path}`,
+    },
   });
 }
 
@@ -52,18 +54,10 @@ export default function About() {
   ];
   return (
     <Column maxWidth="m">
-      <Schema
-        as="webPage"
-        baseURL={baseURL}
+      <ProfileStructuredData
+        path={about.path}
         title={about.title}
         description={about.description}
-        path={about.path}
-        image={`/api/og/generate?title=${encodeURIComponent(about.title)}`}
-        author={{
-          name: person.name,
-          url: `${baseURL}${about.path}`,
-          image: `${baseURL}${person.avatar}`,
-        }}
       />
       {about.tableOfContent.display && (
         <Column
@@ -89,7 +83,7 @@ export default function About() {
             flex={3}
             horizontal="center"
           >
-            <Avatar src={person.avatar} size="xl" />
+            <ProfileImage variant="about" />
             <Flex gap="8" vertical="center">
               <Icon onBackground="accent-weak" name="globe" />
               {person.location}

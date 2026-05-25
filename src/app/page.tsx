@@ -1,29 +1,42 @@
 import React from "react";
 
-import { Heading, Flex, Text, Button, Avatar, RevealFx, Column, Badge, Row, Schema } from "@once-ui-system/core";
+import { Heading, Flex, Text, Button, RevealFx, Column, Badge, Row } from "@once-ui-system/core";
 import { home, about, person, newsletter, baseURL, routes } from "@/resources";
-import { Mailchimp } from "@/components";
+import { Mailchimp, ProfileImage, ProfileStructuredData } from "@/components";
 import { Projects } from "@/components/work/Projects";
 import { Posts } from "@/components/blog/Posts";
+import { generateProfileImageMetadata } from "@/utils/seo";
+
+export async function generateMetadata() {
+  return generateProfileImageMetadata({
+    title: home.title,
+    description: home.description,
+    baseURL,
+    path: home.path,
+    author: {
+      name: person.name,
+      url: `${baseURL}${about.path}`,
+    },
+  });
+}
 
 export default function Home() {
   return (
     <Column maxWidth="m" gap="xl" horizontal="center">
-      <Schema
-        as="webPage"
-        baseURL={baseURL}
+      <ProfileStructuredData
         path={home.path}
         title={home.title}
         description={home.description}
-        image={`/api/og/generate?title=${encodeURIComponent(home.title)}`}
-        author={{
-          name: person.name,
-          url: `${baseURL}${about.path}`,
-          image: `${baseURL}${person.avatar}`,
-        }}
       />
-      <Column fillWidth paddingY="24" gap="m">
-        <Column maxWidth="s">
+      <Flex
+        fillWidth
+        paddingY="24"
+        gap="xl"
+        vertical="center"
+        horizontal="between"
+        s={{ direction: "column" }}
+      >
+        <Column maxWidth="s" flex={1}>
           {home.featured.display && (
           <RevealFx fillWidth horizontal="start" paddingTop="16" paddingBottom="32" paddingLeft="12">
             <Badge background="brand-alpha-weak" paddingX="12" paddingY="4" onBackground="neutral-strong" textVariant="label-default-s" arrow={false}
@@ -53,20 +66,15 @@ export default function Home() {
               arrowIcon
             >
               <Flex gap="8" vertical="center" paddingRight="4">
-                {about.avatar.display && (
-                  <Avatar
-                    marginRight="8"
-                    style={{ marginLeft: "-0.75rem" }}
-                    src={person.avatar}
-                    size="m"
-                  />
-                )}
                 {about.title}
               </Flex>
             </Button>
           </RevealFx>
         </Column>
-      </Column>
+        <RevealFx delay={0.15} translateY="8">
+          <ProfileImage priority />
+        </RevealFx>
+      </Flex>
       <RevealFx translateY="16" delay={0.6}>
         <Projects range={[1, 1]} />
       </RevealFx>

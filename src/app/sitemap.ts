@@ -1,9 +1,11 @@
 import { getPosts } from "@/utils/utils";
-import { baseURL, routes as routesConfig } from "@/resources";
+import { baseURL, profileImage, routes as routesConfig } from "@/resources";
 
 export const dynamic = 'force-static';
 
 export default async function sitemap() {
+  const profileImageUrl = `${baseURL}${profileImage.src}`;
+
   const blogs = getPosts(["src", "app", "blog", "posts"]).map((post) => ({
     url: `${baseURL}/blog/${post.slug}`,
     lastModified: post.metadata.publishedAt,
@@ -19,6 +21,7 @@ export default async function sitemap() {
   const routes = activeRoutes.map((route) => ({
     url: `${baseURL}${route !== "/" ? route : ""}`,
     lastModified: new Date().toISOString().split("T")[0],
+    ...(route === "/" || route === "/about" ? { images: [profileImageUrl] } : {}),
   }));
 
   return [...routes, ...blogs, ...works];

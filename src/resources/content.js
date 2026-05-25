@@ -1,3 +1,24 @@
+const profileImage = {
+  src: "/images/parker-shamblin-portfolio-avatar.jpg",
+  width: 1594,
+  height: 1682,
+  alt: "Portrait of Parker Shamblin, software engineer and computer science student",
+  caption: "Parker Shamblin, software engineer and computer science student in Tampa, Florida.",
+  sizes: "(max-width: 640px) min(80vw, 360px), (max-width: 1024px) 320px, 420px",
+  sources: {
+    webp: [
+      { src: "/images/profile/parker-shamblin-portfolio-avatar-480w.webp", width: 480 },
+      { src: "/images/profile/parker-shamblin-portfolio-avatar-960w.webp", width: 960 },
+      { src: "/images/profile/parker-shamblin-portfolio-avatar-1200w.webp", width: 1200 },
+    ],
+    jpeg: [
+      { src: "/images/profile/parker-shamblin-portfolio-avatar-480w.jpg", width: 480 },
+      { src: "/images/profile/parker-shamblin-portfolio-avatar-960w.jpg", width: 960 },
+      { src: "/images/profile/parker-shamblin-portfolio-avatar-1200w.jpg", width: 1200 },
+    ],
+  },
+};
+
 const person = {
   firstName: "Parker",
   lastName: "Shamblin",
@@ -5,7 +26,7 @@ const person = {
     return `${this.firstName} ${this.lastName}`;
   },
   role: "Software Engineer",
-  avatar: "/images/avatar.jpg",
+  avatar: profileImage.src,
   email: "parkershamblin@gmail.com",
   location: "Tampa, Florida", // Display location
   timeZone: "America/New_York", // IANA time zone identifier for Tampa, Florida (Eastern Time)
@@ -48,12 +69,19 @@ const social = [
   },
 ];
 
+const identityLinks = [
+  ...social
+    .filter((item) => item.name !== "Email")
+    .map((item) => item.link),
+  "https://www.facebook.com/metamadememakethisaccount",
+];
+
 const home = {
   path: "/",
-  image: "/images/og/home.jpg",
+  image: profileImage.src,
   label: "Home",
   title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
+  description: `Portfolio website for ${person.name}, a ${person.role} and computer science student in Tampa, Florida.`,
   headline: <>Transforming ideas into intelligent solutions</>,
   featured: {
     display: true,
@@ -271,4 +299,4 @@ const gallery = {
   ],
 };
 
-export { person, social, newsletter, home, about, blog, work, gallery };
+export { person, profileImage, identityLinks, social, newsletter, home, about, blog, work, gallery };
