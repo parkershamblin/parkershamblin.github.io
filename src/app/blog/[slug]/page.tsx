@@ -26,13 +26,18 @@ export async function generateMetadata({
 
   if (!post) return {};
 
-  return Meta.generate({
-    title: post.metadata.title,
-    description: post.metadata.summary,
-    baseURL: baseURL,
-    image: post.metadata.image || `/api/og/generate?title=${post.metadata.title}`,
-    path: `${blog.path}/${post.slug}`,
-  });
+  return {
+    ...Meta.generate({
+      title: post.metadata.title,
+      description: post.metadata.summary,
+      baseURL: baseURL,
+      image: post.metadata.image || `/api/og/generate?title=${post.metadata.title}`,
+      path: `${blog.path}/${post.slug}`,
+    }),
+    alternates: {
+      canonical: `${baseURL}${blog.path}/${post.slug}`,
+    },
+  };
 }
 
 export default async function Blog({

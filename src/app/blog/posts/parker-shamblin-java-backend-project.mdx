@@ -1,0 +1,70 @@
+---
+title: "Parker Shamblin Java Backend Project | JDBC, Oracle SQL, and Tomcat"
+publishedAt: "2026-06-04"
+image: "/images/parker-shamblin-java-backend-platform-medium-cover.jpg"
+summary: "Review Parker Shamblin's Java backend learning project, documenting JSP, Servlets, JDBC, Oracle SQL, Tomcat, role-aware workflow design, and database architecture."
+tag: "Java"
+---
+
+![Java backend architecture cover for Parker Shamblin retail banking and brokerage platform with Servlet, JDBC, and Oracle database layers.](/images/parker-shamblin-java-backend-platform-medium-cover.jpg)
+
+Backend projects become more useful when they model connected workflows instead of only a single feature. One repository I have been documenting presents a Retail Banking and Brokerage Platform learning project using Java, JSP, Jakarta Servlets, JDBC, Oracle XE, and Apache Tomcat.
+
+The project gives me a concrete environment for practicing application structure, database design, request handling, validation, and documentation across related workflow areas.
+
+## Project Summary
+
+The documented project structure is organized around public visitors, customers, tellers, and managers.
+
+The repository's feature map describes public asset browsing; customer account, portfolio, transaction, watchlist, transfer, and trading areas; teller account-maintenance areas; and manager oversight and approval areas. These areas create useful engineering questions:
+
+- Which database tables support each page?
+- Which actions should be grouped into a transaction?
+- Which operations belong in a stored procedure?
+- How should request handling stay separate from data access?
+- Which screenshots and diagrams make the system easier to review?
+
+## Keeping The Java Structure Understandable
+
+The repository documents a straightforward Java web application layout:
+
+- JSP views for presentation
+- Jakarta Servlets for request handling
+- DAO classes for database access
+- Model and utility classes for shared application behavior
+- Oracle SQL scripts for schema, seeded content, procedures, views, and verification
+
+This structure makes the application easier to review. A reader can start from a visible page, follow the related request handling, and inspect the DAO and SQL objects described by the repository documentation.
+
+## Connecting Features To The Database
+
+The schema and supporting documentation describe related records for users, credentials, accounts, transactions, transfers, assets, price history, portfolios, trade orders, watchlists, approvals, content pages, and contact messages.
+
+The documentation associates:
+
+- Public asset browsing with a public asset snapshot view
+- Customer dashboards with account, approval, and portfolio information
+- Transfer and trade areas with stored procedures
+- Manager review areas with pending-approval data and related activity records
+
+Writing a feature-to-database map makes gaps easier to see. If I cannot connect a page to the data and logic behind it, the documentation still needs work.
+
+## Approval Flows As A Design Exercise
+
+The documented design includes approval-flow concepts for selected transfer and trade scenarios. An approval flow introduces state: a request can be created, reviewed, approved, rejected, or reflected in related history.
+
+That makes state transitions part of the design rather than an afterthought. The application code and database records need to agree on what each status means and how each page presents it.
+
+## Documentation And Next Steps
+
+Backend work benefits from visible evidence. The repository documentation presents screenshots grouped by public, customer, teller, and manager workflow areas.
+
+The next documentation step is to pair reviewed screenshots with a concise architecture diagram and a database-flow diagram. Any image selected for public use should be checked for credentials, private configuration, sensitive records, and potentially misleading seeded data.
+
+## Review The Project
+
+- Java repository: [github.com/parkershamblin/retail-banking-brokerage-platform](https://github.com/parkershamblin/retail-banking-brokerage-platform)
+- Portfolio homepage: [parkershamblin.com](https://parkershamblin.com/)
+- Work index: [parkershamblin.com/work](https://parkershamblin.com/work)
+- Blog index: [parkershamblin.com/blog](https://parkershamblin.com/blog)
+- GitHub profile: [github.com/parkershamblin](https://github.com/parkershamblin)
