@@ -1,0 +1,79 @@
+---
+title: "Parker Shamblin OpenCV Project | Python Computer Vision Workflow"
+publishedAt: "2026-06-04"
+image: "/images/parker-shamblin-opencv-computer-vision-medium-cover.jpg"
+summary: "Review Parker Shamblin's Python and OpenCV learning project, including desktop-window capture, cascade-classifier detection, result review, documented limits, and next steps."
+tag: "OpenCV"
+---
+
+![OpenCV computer vision pipeline cover for Parker Shamblin showing capture, classifier detection, and result review stages.](/images/parker-shamblin-opencv-computer-vision-medium-cover.jpg)
+
+Computer vision projects are useful learning tools because the results are visible. When a detection works, I can inspect the output. When it fails, I can review the input, assumptions in the pipeline, and surrounding image conditions.
+
+One repository in my portfolio documents a Python and OpenCV experiment built around desktop-window capture and a trained cascade-classifier workflow for reviewing object detections in a game environment. I keep it framed as a learning project with clear limitations, not as a polished application or a deployment guide.
+
+## Project Summary
+
+The useful part of this project is the workflow and the feedback loop. The repository documents stages such as:
+
+1. Capture an image from a desktop window.
+2. Pass the captured frame into an OpenCV detection step.
+3. Use a trained cascade classifier to identify candidate regions.
+4. Draw or inspect detection rectangles.
+5. Review results and document the next measurement or improvement.
+
+Each stage creates practical debugging questions. Is the captured image correct? Does the region contain useful visual information? Are the detected rectangles reasonable? Which failure cases should be saved for later review?
+
+## Why A Cascade Classifier Was Useful For Learning
+
+A cascade classifier is not the newest approach to object detection, but it is useful for learning because the workflow is concrete. The repository includes classifier output and supporting scripts for working with dataset-related files.
+
+This makes the project a place to practice:
+
+- Reviewing example images
+- Separating positive and negative examples
+- Understanding annotation and training steps
+- Inspecting false detections
+- Documenting repeatable setup and retraining notes
+
+Precise dataset claims should remain omitted until source images, derived samples, and recorded training commands have been reconciled.
+
+## Real-World Inputs And Current Constraints
+
+Image-processing code behaves differently when the input is not a clean sample image. A captured desktop frame can vary with window position, scene composition, interface elements, and other visual noise.
+
+The repository documents current constraints: the experiment is Windows-specific, depends on a desktop window title, includes hard-coded assumptions, controls the mouse when run, and does not yet have a complete automated test suite. Those limits define useful next engineering tasks.
+
+## Measurement Backlog
+
+The next improvements should be measurable. Questions to investigate include:
+
+- How often does a detected rectangle match a reviewed target?
+- Which scene variations produce the most false detections?
+- How long does the detection loop take in a defined test environment?
+- Can capture offsets and rectangle calculations be covered by focused tests?
+- Can a clean setup guide be followed on a fresh Windows environment?
+
+These questions describe a measurement backlog, not measured results.
+
+## Responsible Project Presentation
+
+The original experiment includes desktop-interaction behavior. For portfolio purposes, the useful focus is the computer vision workflow:
+
+- Capturing input
+- Running OpenCV detection
+- Inspecting classifier output
+- Documenting constraints
+- Planning honest evaluation
+
+Anyone reviewing or extending an automation experiment should respect the rules of the platform involved and avoid using the project in ways that violate those rules.
+
+## Review The Project
+
+- OpenCV repository: [github.com/parkershamblin/opencv-OSRS1](https://github.com/parkershamblin/opencv-OSRS1)
+- OpenCV work page: [parkershamblin.com/work/OSRS-computer-vision-project](https://parkershamblin.com/work/OSRS-computer-vision-project)
+- Portfolio overview: [parkershamblin.com/blog/parker-shamblin-software-engineer](https://parkershamblin.com/blog/parker-shamblin-software-engineer)
+- Portfolio homepage: [parkershamblin.com](https://parkershamblin.com/)
+- Work index: [parkershamblin.com/work](https://parkershamblin.com/work)
+- Blog index: [parkershamblin.com/blog](https://parkershamblin.com/blog)
+- GitHub profile: [github.com/parkershamblin](https://github.com/parkershamblin)
