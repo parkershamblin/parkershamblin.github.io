@@ -36,9 +36,8 @@ function checkPasswordRequired(pathname: string | null) {
 
 const RouteGuard: React.FC<RouteGuardProps> = ({ children }) => {
   const pathname = usePathname();
-  const initialRouteEnabled = checkRouteEnabled(pathname);
   const initialPasswordRequired = checkPasswordRequired(pathname);
-  const [isRouteEnabled, setIsRouteEnabled] = useState(initialRouteEnabled);
+  const [isRouteEnabled, setIsRouteEnabled] = useState(true);
   const [isPasswordRequired, setIsPasswordRequired] = useState(initialPasswordRequired);
   const [password, setPassword] = useState("");
   const [isAuthenticated, setIsAuthenticated] = useState(false);
