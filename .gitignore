@@ -41,3 +41,6 @@ wrangler.json
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# misc
+/misc/
